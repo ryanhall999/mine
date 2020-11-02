@@ -19,8 +19,8 @@ def minesweeper (n) :
   if(x >= 1 and x<= 4) and (y >= 1 and y <= 4):
     arr[y-1][x-1] += 1 # top left
 
-  if(x >= 0 and x<= 3) and (y >= 1 and y <= 4):
-    arr[y-1][x+1] += 1 # top left
+#  if(x >= 0 and x<= 3) and (y >= 1 and y <= 4):
+#    arr[y-1][x+1] += 1 # top left
 
   for row in arr:
     print(" ".join(str(cell) for cell in row))
