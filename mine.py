@@ -13,8 +13,8 @@ def minesweeper (n) :
   if(x == 0):
     arr[y][x+1] += 1 # center right
   
-#  if(x == 4):
-#    arr[y][x-1] += 1 # center left
+  if(x == 4):
+    arr[y][x-1] += 1 # center left
 
 #  if(x >= 1 and x<= 4) and (y >= 1 and y <= 4):
 #    arr[y-1][x-1] += 1 # top left
