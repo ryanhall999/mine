@@ -26,7 +26,13 @@ def minesweeper (n) :
     arr[y-1][x] += 1 # top center 
 
   if(x >= 0 and x<= 3) and (y >= 0 and y <= 3):
-    arr[y+1][x-1] += 1 # bottom right   
+    arr[y+1][x+1] += 1 # bottom right   
+
+  if(x >= 1 and x<= 4) and (y >= 0 and y <= 3):
+    arr[y+1][x-1] += 1 # bottom left   
+
+  if(x >= 0 and x<= 4) and (y >= 0 and y <= 3):
+    arr[y+1][x] += 1 # bottom center   
 
   for row in arr:
     print(" ".join(str(cell) for cell in row))
